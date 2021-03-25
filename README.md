@@ -4,7 +4,7 @@ A collection of Windows applications made fully portable and movable while conta
 ![alt-text](https://user-images.githubusercontent.com/32809089/112470879-35f5af00-8d91-11eb-9fc7-54ff11e3c138.png)
 
 ### What is this, and how does it work?
-This repository contains applications that are normally not amenable to being portable, made portable through the use of <b>symbolic links, aka symlinks</b> (simply put, it's like a shortcut, except that it behaves like the folder or file has been cloned and not just linked), <b>VBScript</b> and <b>Command Prompt batch files</b> as invisible launchers.
+This repository contains applications that are normally not amenable to being portable, made portable through the use of <b>symbolic links, aka symlinks</b> (simply put, it's like a shortcut, except that it behaves like the folder or file has been cloned and not just linked), and <b>VBScript</b> and <b>Command Prompt batch files</b> as invisible launchers that do all the component (de)registration, launching and cleanup processes.
 
 The advantage of this approach, is that there is practically <i>zero overhead</i> in running a portable app – unlike the packages created by softwares like VMware ThinApp that put all files in a single file, and then creating additional folders and files for user data, making it somewhat of an annoyance when it comes to moving the application between systems – because it uses no extra tools other than the scripting languages baked into Windows. The best advantage, however, is the system integration that this approach allows for: the applications can be launched from the right-click context menu, in any folder, at any time.
 
