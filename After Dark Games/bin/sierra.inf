@@ -1,0 +1,28 @@
+[Ident]
+ProductID = 70571
+Version = 1.0
+PatchVersion = 1.0.0.0
+ShortTitle = ADGames
+UpdateAfter = 9-1-1998
+WebPage = http://www.bezerk.com/
+StrippedDemo=0
+
+[Demos]
+blah = blah
+
+[Bookmarks]
+http://www.sierra.com = The Sierra Web Site
+http://www.bezerk.com = The Bezerk Web Site
+http://www.toasted.com = The Berkeley Systems Web Site
+
+[System Test]
+ScreenWidth = 640
+ScreenHeight = 480
+Colors = 256
+MemKB = 7168
+WinVer = 395
+Wave = 1
+
+
+[Setup]
+InstallShield=1

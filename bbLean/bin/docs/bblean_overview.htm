@@ -1,0 +1,523 @@
+<html>
+<head>
+<title>bbLean - Readme</title>
+<link rel="stylesheet" href="bblean_style.css" type="text/css">
+<style type=text/css></style>
+<base target="body">
+</head>
+<body class="frame_body">
+<BLOCKQUOTE>&quot;A new Blackbox for Windows generation...&quot;</BLOCKQUOTE>
+<A CLASS="label" NAME="Overview"><H1>Overview</H1></A>
+<P>bbLean is the lean version of Blackbox for Windows. It tries
+to keep balance between features and complexity, to give you
+some efficient means within a compact shell.</P>
+<P>bbLean is based stylistically on the
+<A HREF="http://blackboxwm.sourceforge.net/" target="_parent">Blackbox&nbsp;window&nbsp;manager</A>
+for the X Window System by Brad Hughes.</P>
+<A CLASS="label" NAME="Quick_Start"><H2>Quick&nbsp;Start</H2></A>
+<P>First:</P>
+<UL><LI>Extract the zip-package to a folder on your computer, such as c:\bbLean.
+<LI>Click on blackbox.exe to start.
+<LI>Right-click on the desktop background to show the main menu.</UL>
+<P>Later:</P>
+<UL><LI>Checkout the universe of plugins available for Blackbox for Windows.
+<LI>You may want to set bbLean as default&nbsp;shell. See -> <A HREF="bblean_details.htm#Install_as_Shell">Install as Shell</A>.</UL>
+<A CLASS="label" NAME="User_Interface"><H2>User&nbsp;Interface</H2></A>
+<P>The Blackbox for Windows shell consists of the following elements:</P>
+<UL><LI>Desktop   - the background of the screen
+<LI>Toolbar   - the undispensible representative of all members of the blackbox family
+<LI>Menus     - configurables, predefined ones and folder listings.
+<LI>Keyboard  - Hotkeys for various action, implememted in the bbKeys plugin.
+<LI>Many others, available as plugins.</UL>
+<A CLASS="label" NAME="Desktop"><H3>Desktop</H3></A>
+<TABLE width=100%><TR ALIGN=LEFT><TH WIDTH=35%>Mouse event</TH>
+<TH>Effect</TH>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>right-click</TD>
+<TD>show main menu</TD>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>mid-click&nbsp;/&nbsp;right-click&nbsp;with&nbsp;shift</TD>
+<TD>show workspaces menu</TD>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>left-click</TD>
+<TD>hide menus / bring pinned menus on top</TD>
+</TR>
+</TABLE>
+<P>These and other desktop mouse-clicks are configurable in extensions.rc.</P>
+<TABLE width=100%><TR ALIGN=LEFT><TH WIDTH=35%>Drop&nbsp;Image</TH>
+<TH>Display mode</TH>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>no modifier</TD>
+<TD>centered</TD>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>with shift held down</TD>
+<TD>stretched</TD>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>with control held down</TD>
+<TD>tiled</TD>
+</TR>
+</TABLE>
+<A CLASS="label" NAME="Toolbar"><H3>Toolbar</H3></A>
+<TABLE width=100%><TR ALIGN=LEFT><TH WIDTH=35%>Mouse event</TH>
+<TH>Effect</TH>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>right-click</TD>
+<TD>show options menu</TD>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>right-click on label</TD>
+<TD>show workspaces menu</TD>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>right-click on clock</TD>
+<TD>show main menu</TD>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>double-click on clock</TD>
+<TD>date &amp; time control</TD>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>ctrl + left-drag</TD>
+<TD>drag toolbar temporarily</TD>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>ctrl + double-left-click</TD>
+<TD>reset position</TD>
+</TR>
+</TABLE>
+<P>The toolbar may be turned on or off from Configuration-&gt;Misc. Please note
+that what you see in the default installation is not the toolbar but bbLeanBar.
+See readme.txt and bbLeanBar.rc in the plugins/bbLeanBar folder.</P>
+<A CLASS="label" NAME="bbLeanBar"><H3>bbLeanBar</H3></A>
+<TABLE width=100%><TR ALIGN=LEFT><TH WIDTH=35%>on taskentry</TH>
+<TH>&nbsp;</TH>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>left-click</TD>
+<TD>activate task</TD>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>gesture to the left/right</TD>
+<TD>move window to previous/next workspace</TD>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>shift-left-click</TD>
+<TD>zoom task into current workspace</TD>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>right-click</TD>
+<TD>minimize task / show window system menu (depending
+ on the setting in Configuration-&gt;Tasks-&gt;System menu)</TD>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>shift-right-click</TD>
+<TD>close task</TD>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>middle-click</TD>
+<TD>move task to next workspace</TD>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>shift-middle-click</TD>
+<TD>move task to previous workspace</TD>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>alt-left-click</TD>
+<TD>change task display mode (text, icon, text+icon)</TD>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>alt-right-click</TD>
+<TD>toggle 'current only' mode</TD>
+</TR>
+</TABLE>
+<BR/>&nbsp;
+<TABLE width=100%><TR ALIGN=LEFT><TH WIDTH=35%>on workspace label</TH>
+<TH>&nbsp;</TH>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>left/right-click</TD>
+<TD>switch to next/previous workspace</TD>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>left-double-click</TD>
+<TD>open clock properties</TD>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>&lt;other&gt;</TD>
+<TD>take over the configuration for desktop-clicks in extension.rc</TD>
+</TR>
+</TABLE>
+<BR/>&nbsp;
+<TABLE width=100%><TR ALIGN=LEFT><TH WIDTH=35%>on tray icon</TH>
+<TH>&nbsp;</TH>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>ctrl-right</TD>
+<TD>show icons menu</TD>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>alt-right</TD>
+<TD>toggle all hidden icons</TD>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>shift-right</TD>
+<TD>toggle one icon</TD>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>&lt;other&gt;</TD>
+<TD>forwarded to the icons' application&gt;</TD>
+</TR>
+</TABLE>
+<BR/>&nbsp;
+<TABLE width=100%><TR ALIGN=LEFT><TH WIDTH=35%>on current-only button</TH>
+<TH>&nbsp;</TH>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>left click</TD>
+<TD>toggle display tasks for all/current workspace</TD>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>right click</TD>
+<TD>toggle display all trayicons</TD>
+</TR>
+</TABLE>
+<BR/>&nbsp;
+<TABLE width=100%><TR ALIGN=LEFT><TH WIDTH=35%>on the entire bar</TH>
+<TH>&nbsp;</TH>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>ctrl-right</TD>
+<TD>bbleanbar options menu</TD>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>ctrl-left-drag</TD>
+<TD>move the bar</TD>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>ctrl-left-double-click</TD>
+<TD>reset the bar to its previous location</TD>
+</TR>
+</TABLE>
+<A CLASS="label" NAME="Menus"><H3>Menus</H3></A>
+<TABLE width=100%><TR ALIGN=LEFT><TH WIDTH=35%>Mouse event</TH>
+<TH>Effect</TH>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>right-click on desktop background</TD>
+<TD>open main menu</TD>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>left-click on desktop background</TD>
+<TD>close menus / bring menus on top</TD>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>right-click on titlebar</TD>
+<TD>close this menu</TD>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>left-click the titlebar and drag</TD>
+<TD>move / pin menu</TD>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>double-left-click the titlebar</TD>
+<TD>toggle on top property</TD>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>left-click on folder</TD>
+<TD>bring back pinned submenu</TD>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>double-left-click on folder</TD>
+<TD>explore folder (*)</TD>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>left-drag of file-item</TD>
+<TD>drag item elsewhere</TD>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>right-click on file-item</TD>
+<TD>open context menu for file or folder</TD>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>shift+right-click on folder titlebar</TD>
+<TD>open folder's context menu</TD>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>alt-double-left on file/folder</TD>
+<TD>show properties</TD>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>mouse wheel / drag scroll-button</TD>
+<TD>scroll long menus</TD>
+</TR>
+</TABLE>
+<P>(*) This command is configurable in extensions.rc, for instance:</P>
+<PRE>blackbox.options.openFolderCommand: explorer.exe /e,&quot;%1&quot;
+</PRE>
+<TABLE width=100%><TR ALIGN=LEFT><TH WIDTH=35%>Keyboard navigation</TH>
+<TH>Effect</TH>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>up/down/left/right arrows</TD>
+<TD>navigate</TD>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>page-up/down home/end</TD>
+<TD>navigate</TD>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>crtl+up/down</TD>
+<TD>scroll menu</TD>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>alt+up/down/left/right arrows</TD>
+<TD>move menu</TD>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>letters A-Z,0-9,...</TD>
+<TD>shortcut (underscored or first letter)</TD>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>enter, spacebar</TD>
+<TD>activate item</TD>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>alt-enter</TD>
+<TD>show properties (file/folder)</TD>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>app-key</TD>
+<TD>show context menu</TD>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>tab</TD>
+<TD>cycle through pinned menus</TD>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>F5</TD>
+<TD>update folder</TD>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>ctrl+n,e,t,s</TD>
+<TD>sort folder by name, extension, time, size</TD>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>insert</TD>
+<TD>pin menu / toggle onTop mode</TD>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>del, escape</TD>
+<TD>close menu</TD>
+</TR>
+</TABLE>
+<P>Notes:</P>
+<P>See the included <A HREF="bblean_overview.htm#Keyboard">bbkeys.rc</A> for examples, how to invoke the menu from
+the keyboard. The LWIN and RWIN key shortcuts work only if bbLean
+is installed as default shell.</P>
+<P>Hold down control for faster progress with the -number+ items.</P>
+<A CLASS="label" NAME="Keyboard"><H3>Keyboard</H3></A>
+<P>Shortcut hotkeys for various actions like changing workspaces or
+switching windows are done with the <B>BBKeys</B> plugin. Edit 'bbkeys.rc'
+to change or add key bindings.</P>
+<P>Default bbkeys.rc bindings:</P>
+<TABLE width=100%><TR ALIGN=LEFT><TH WIDTH=35%>Menu</TH>
+<TH>&nbsp;</TH>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>LWin</TD>
+<TD>ShowMenu -key root</TD>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>RWin</TD>
+<TD>ShowMenu -key</TD>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>Win + Ctrl + M</TD>
+<TD>ShowMenu</TD>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>Win + Shift + M</TD>
+<TD>ShowWorkspaceMenu</TD>
+</TR>
+</TABLE>
+<BR/>&nbsp;
+<TABLE width=100%><TR ALIGN=LEFT><TH WIDTH=35%>Workspaces</TH>
+<TH>&nbsp;</TH>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>Win + Num1..6</TD>
+<TD>Workspace1..6</TD>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>Win + Left</TD>
+<TD>PrevWorkspace</TD>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>Win + Right</TD>
+<TD>NextWorkspace</TD>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>Win + Ctrl + Left</TD>
+<TD>PrevWindow</TD>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>Win + Ctrl + Right</TD>
+<TD>NextWindow</TD>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>Win + Ctrl + Up</TD>
+<TD>PrevWindowAllWorkspaces</TD>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>Win + Ctrl + Down</TD>
+<TD>NextWindowAllWorkspaces</TD>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>Win + Up</TD>
+<TD>MoveWindowLeft</TD>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>Win + Down</TD>
+<TD>MoveWindowRight</TD>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>Win + G</TD>
+<TD>GatherWindows</TD>
+</TR>
+</TABLE>
+<BR/>&nbsp;
+<TABLE width=100%><TR ALIGN=LEFT><TH WIDTH=35%>Windows</TH>
+<TH>&nbsp;</TH>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>Win + X</TD>
+<TD>MaximizeWindow</TD>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>Win + V</TD>
+<TD>MaximizeVertical</TD>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>Win + H</TD>
+<TD>MaximizeHorizontal</TD>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>Win + N</TD>
+<TD>MinimizeWindow</TD>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>Win + Y</TD>
+<TD>RestoreWindow</TD>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>Win + D</TD>
+<TD>MinimizeAll</TD>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>Win + End</TD>
+<TD>ShadeWindow</TD>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>Win + PageUp</TD>
+<TD>RaiseWindow</TD>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>Win + PageDown</TD>
+<TD>LowerWindow</TD>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>Win + Insert</TD>
+<TD>StickWindow</TD>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>Win + Delete</TD>
+<TD>CloseWindow</TD>
+</TR>
+</TABLE>
+<BR/>&nbsp;
+<TABLE width=100%><TR ALIGN=LEFT><TH WIDTH=35%>Blackbox</TH>
+<TH>&nbsp;</TH>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>Win + M</TD>
+<TD>EditMenu</TD>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>Win + P</TD>
+<TD>EditPlugins</TD>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>Win + S</TD>
+<TD>EditStyle</TD>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>Win + Ctrl + S</TD>
+<TD>AboutStyle</TD>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>Win + Ctrl + P</TD>
+<TD>TogglePlugins</TD>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>Win + T</TD>
+<TD>ToggleTray</TD>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>Win + Ctrl + R</TD>
+<TD>Reconfigure</TD>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>Win + Alt + R</TD>
+<TD>Restart</TD>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>Win + Q</TD>
+<TD>Quit</TD>
+</TR>
+</TABLE>
+<BR/>&nbsp;
+<TABLE width=100%><TR ALIGN=LEFT><TH WIDTH=35%>System</TH>
+<TH>&nbsp;</TH>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>Win + F10</TD>
+<TD>Logoff</TD>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>Win + F11</TD>
+<TD>Reboot</TD>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>Win + F12</TD>
+<TD>Shutdown</TD>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>Win + Ctrl + F12</TD>
+<TD>Hibernate</TD>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>Win + Alt + F12</TD>
+<TD>Suspend</TD>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>Win + Spacebar</TD>
+<TD>LockWorkstation</TD>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>Win + R</TD>
+<TD>Run</TD>
+</TR>
+</TABLE>
+<BR/>&nbsp;
+<TABLE width=100%><TR ALIGN=LEFT><TH WIDTH=35%>Extern commands</TH>
+<TH>&nbsp;</TH>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>Win + E</TD>
+<TD>Exec explorer.exe /e,c:\  (explorer window)</TD>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>Win + Pause</TD>
+<TD>Exec control.exe sysdm.cpl (system properties)</TD>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>Win + Home</TD>
+<TD>Exec docs\bblean.htm (bbLean documentation)</TD>
+</TR>
+</TABLE>
+<A CLASS="label" NAME="Plugins"><H3>Plugins</H3></A>
+<H4>To&nbsp;load&nbsp;a&nbsp;plugin</H4>
+<P>Either use bbLean's configuration menu or add it manually to
+plugins.rc and restart bbLean.</P>
+<P>Clicking the right mouse button on a plugin with the control key held down
+will usually show its configuration menu.</P>
+<P>Dragging with the left mouse button with the control key held down
+will usually allow you to move the plugin over the screen.</P>
+<P>To load a plugin into BBSlit, you need to:</P>
+<UL><LI>have BBSlit itself loaded (of course)
+<LI>load the plugin
+<LI>check the plugin in bbLean's &quot;Configuration-&gt;Plugins-&gt;In Slit&quot; menu.
+<LI>check &quot;Use Slit&quot; or &quot;Docked to Slit&quot; in the plugin's own configuration menu.</UL>
+<H4>Some&nbsp;basic&nbsp;plugins</H4>
+<TABLE width=100%><TR ALIGN=LEFT><TH WIDTH=35%>Plugin</TH>
+<TH>Author</TH>
+<TH>Note</TH>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>BBAnalogExMod</TD>
+<TD>ysuke</TD>
+<TD>Analogue clock, with alarm etc.</TD>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>BBCalendar</TD>
+<TD>Theo</TD>
+<TD>Calendar that lets you set events on days.</TD>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>BBEdgeFlip</TD>
+<TD>BladeStaylor</TD>
+<TD>Switches workspace when mouse touches screen edge</TD>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>BBIcons</TD>
+<TD>Tres`ni</TD>
+<TD>Icons to start programs, sitting on desktop or in the slit.
+ Get docs from the pack <A HREF="http://xoblite.net/plugins.html" target="_parent">here</A>,
+ but use latest version from <A HREF="http://bb4win.sourceforge.net/latest/Latest/" target="_parent">here</A>.</TD>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>bbIconBox</TD>
+<TD>grischka</TD>
+<TD>Icons in boxes.</TD>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>BBInterface</TD>
+<TD>psyci</TD>
+<TD>Buttons, sliders, icons and more...</TD>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>BBMail</TD>
+<TD>qwilk</TD>
+<TD>Checks your email accounts.</TD>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>bbNote</TD>
+<TD>grischka</TD>
+<TD>Little stylized editor to edit your rc-files and other things.</TD>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>BBPager</TD>
+<TD>NC-17</TD>
+<TD>Virtual workspace display and control.</TD>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>BBSoundFx</TD>
+<TD>qwilk</TD>
+<TD>Plays sound snippets on various events.</TD>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>BBTaskSwitch</TD>
+<TD>kana</TD>
+<TD>BB-stylized Alt-Tab SwitchWindow.</TD>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>BBXEyes</TD>
+<TD>Procic Konstantin</TD>
+<TD>Eyes following your cursor around the screen</TD>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>SystembarEx</TD>
+<TD>BladeStaylor</TD>
+<TD>Very configurable advanced taskbar.
+ Available <A HREF="http://bb4win.sourceforge.net/systembarex/" target="_parent">here</A>. Use the
+ latest built (07-14) from <A HREF="http://bb4win.sourceforge.net/systembarex/bin/test/" target="_parent">here</A>.</TD>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>bbFoomp</TD>
+<TD>freeborn</TD>
+<TD>Front-end for foobar2k (must be loaded into slit).</TD>
+</TR>
+</TABLE>
+<P>There are many other plugins available. See -> <A HREF="bblean_info.htm#Links">Links</A>.</P>
+<P>&nbsp;</P>
+<P>Note: If you get an error loading a plugin it might require extra runtime
+libraries (msvcr71/msvcp71.dll, msvcr80/msvcp80.dll, gdiplus.dll, ...).
+Kana's plugins require bbcmd.dll from his website.</P>
+<P>You can put these into the system32 directory or into the same directory
+as blackbox.exe.</P>
+
+<p>&nbsp;</p>
+<p class="footer">Copyright 2003-2009 grischka@users.sourceforge.net</p>
+</body>
+</html>

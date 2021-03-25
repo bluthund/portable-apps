@@ -1,0 +1,374 @@
+<html>
+<head>
+<title>bsetroot.readme</title>
+<style type=text/css>
+body {
+scrollbar-arrow-color:      #000;
+scrollbar-base-color:       #000;
+scrollbar-shadow-color:     #000;
+scrollbar-darkshadow-color: #000;
+scrollbar-track-color:      #000;
+scrollbar-highlight-color:  #000;
+scrollbar-3d-light-color:   #000;
+scrollbar-face-color:       #555;
+font-family: sans-serif;
+color: #999;
+background-color: #000;
+font-size: 11;
+}
+
+h1 {font-size:20px; padding-top:0px}
+h2 {font-size:16px; padding-top:20px}
+h3 {font-size:12px; padding-top:20px}
+h4 {font-size:12px; padding-top:20px}
+
+h1,h2,h3,h4 {font-weight:bold}
+h1 {color: #C60;}
+h2,h3 {color: #aaa;}
+h4 {color: #aaa; margin-bottom: 4;}
+
+P {
+margin-right: 10%;
+text-indent: 0px;
+margin-top: 8;
+margin-bottom: 8px;
+}
+
+table {
+font-family: helvetica, verdana, sans-serif;
+font-size: 11;
+font-weight: normal;
+background-color: #111;
+color: #999;
+}
+
+TH {
+text-align: left;
+color: #aaa;
+}
+
+TD {
+background-color: #000;
+}
+
+pre {
+font-family: lucida console, courier new, courier;
+font-weight: normal;
+padding: 2px;
+margin-left: 15px;
+margin-top: 2px;
+color: #787;
+overflow: hidden;
+}
+
+HR {
+color: #777;
+width: 80%;
+text-align: center;
+}
+
+B { color: #bbb; font-weight: normal }
+
+blockquote {
+font-size: 10pt;
+font-style: italic;
+margin-left: 0;
+}
+
+LI {
+margin-right: 10%;
+margin-bottom: 2;
+}
+
+ul {
+margin-top: 2;
+margin-bottom: 2;
+padding-left: 25;
+}
+
+dl {
+}
+
+dt {
+font-weight: normal;
+color: #aaa;
+margin-top: 6px;
+margin-bottom: 4px;
+}
+
+dd {
+margin-left: 16px;
+margin-bottom: 4px;
+}
+
+.footer {
+font-family: helvetica, verdana, sans-serif;
+font-size: 10px;
+letter-spacing: 1pt;
+text-align: center;
+margin-top: 10;
+}
+
+a.label { text-decoration: none; }
+a.label:hover { text-decoration: none; }
+a { color:#789; text-decoration: none; }
+a:hover { color:#abc; text-decoration: underline; }
+
+.bb1 { color: #DDD; }
+.bb2 { color: #D60; }
+.bb3 { color: #999; font-size: 12px; }
+
+.simple_toc td { background-color: #111; text-align: right;}
+.simple_toc h1 { font-size: 24px; text-align:left; margin-right:30px; padding-top:0}
+.simple_toc .t1 { font-size: 13px; font-weight: bold; color: #aaa;}
+.simple_toc .t2 { font-weight: bold; color: #999; }
+.simple_toc .t3 { color: #898; font-size: 10px; }
+.simple_toc a.t2 { color:#999; text-decoration: none; }
+.simple_toc a:hover { color:#abc; text-decoration: underline; }
+.simple_body td { background-color: #111; }
+table.simple_toc, table.simple_body { width: 640px; padding-left:20px; padding-top:10px; margin:0px;}
+table.simple_body { margin-top: 20px }
+
+.frame_toc { background-color: #111; margin:0; padding-right:20; }
+.frame_toc h1 { margin-left: 20px; margin-top:10px; margin-bottom:10px; text-align:right}
+.frame_toc .t1 { color: #d60; font-size:14px; font-weight: bold; margin-top: 10}
+.frame_toc .t2 { color: #aaa; }
+.frame_toc .t3 { color: #789; }
+.frame_toc a { text-decoration: none; }
+.frame_toc a:hover { text-decoration: underline; }
+.frame_toc p { margin: 0; text-align: right; }
+.frame_toc ul { padding-left:10; margin-left:10; list-style:none; }
+.frame_body { background-color: #111; padding-left:10px; }
+.frame_body h3 { color:#89a }
+body.frame_toc {border: #333 1px solid; height:99%;}
+
+ 
+body{padding:20px}
+</style>
+</head>
+<body>
+<center>
+
+<table cellspacing=0 cellpadding=0 class="simple_toc">
+<tr valign=top>
+<td class="simple_toc"><h1><span class="bb2">bsetroot</span>&nbsp;<span class="bb3">2.1</span>&nbsp;</h1></td>
+<td><p><A CLASS="T2" HREF="#Introduction">1.&nbsp;Introduction</A> &nbsp; 
+<A CLASS="T2" HREF="#Switches">2.&nbsp;Switches</A> &nbsp; 
+<A CLASS="T2" HREF="#Configuration">3.&nbsp;Configuration</A> &nbsp; 
+<A CLASS="T2" HREF="#Searchpaths">4.&nbsp;Searchpaths</A> &nbsp; 
+<A CLASS="T2" HREF="#Gradients">5.&nbsp;Gradients</A> &nbsp; 
+<A CLASS="T2" HREF="#Colours">6.&nbsp;Colours</A> &nbsp; 
+<A CLASS="T2" HREF="#History">7.&nbsp;History</A> &nbsp; </p></td>
+</tr></table>
+
+<table cellspacing=0 cellpadding=0 class="simple_body">
+<tr><td class="simple_body">
+<P>bsetroot is a tool for Blackbox for Windows.</P>
+<P>&copy; 2001-2003 The Blackbox for Windows Development Team
+<BR />&copy; 2003-2009 grischka at-users-dot-sourceforge.net
+<BR /><A HREF="http://bb4win.sourceforge.net/bblean/">http://bb4win.sourceforge.net/bblean/</A>
+<BR /><A HREF="http://bb4win.org/">http://bb4win.org/</A></P>
+<P>Based on bsetroot for Blackbox on Linux by Brad Hughes.</P>
+<P>bsetroot is free software, released under the GNU General Public
+License (GPL version 2). See: <A HREF="http://www.fsf.org/licenses/gpl.html">http://www.fsf.org/licenses/gpl.html</A></P>
+<P>bsetroot 2.1 uses CxImage 5.11. Supported image formats:
+bmp png jpg gif.</P>
+<A CLASS="label" NAME="Introduction"><H2>1.&nbsp;Introduction</H2></A>
+<P>bsetroot lets you set your desktop background to either a
+solid colour, a gradient, a square pattern, an image, or a
+combination of these. bsetroot usually is called from the
+'rootCommand' line in a blackbox style.</P>
+<P>The included bsetbg.exe works just as an alias to bsetroot.</P>
+<H4>Note&nbsp;on&nbsp;v2.1</H4>
+<P>The format of bsetroot.rc has been changed to a more intuitive format.
+No more cryptic wildcards, just simple search paths. See -> <A HREF="#Configuration">Configuration</A>.</P>
+<A CLASS="label" NAME="Switches"><H2>2.&nbsp;Switches</H2></A>
+<DL><DT>-solid &lt;colour&gt; :</DT>
+<DD>Change the desktop background to the colour you specify.</DD></DL>
+<DL><DT>-gradient &lt;type&gt; -from &lt;colour&gt; -to &lt;colour&gt; :</DT>
+<DD>Apply a <A HREF="#Gradients">gradient</A> of specified type to the
+ background.</DD></DL>
+<DL><DT>-mod &lt;x&gt; &lt;y&gt; -fg &lt;colour&gt; [-bg &lt;colour&gt;] :</DT>
+<DD>Apply a square pattern to the background. &lt;x&gt; and &lt;y&gt; set the size
+ of the squares.</DD></DL>
+<DL><DT>-full &lt;image&gt; :</DT>
+<DD>Display an image stretched to cover the desktop.</DD></DL>
+<DL><DT>-tile &lt;image&gt; :</DT>
+<DD>Display an image tiled over the desktop.</DD></DL>
+<DL><DT>-center &lt;image&gt; :</DT>
+<DD>Display an image in the center of the desktop.</DD></DL>
+<DL><DT>-bitmap [stretch|tile|center] &lt;image&gt; :</DT>
+<DD>Similar to above.</DD></DL>
+<DL><DT>-sat &lt;0..255&gt; :</DT>
+<DD>Set image color saturation</DD></DL>
+<DL><DT>-hue &lt;0..255&gt; :</DT>
+<DD>Set image/background merge factor.</DD></DL>
+<DL><DT>-scale &lt;factor&gt; :</DT>
+<DD>Resize the image by a percent factor.</DD></DL>
+<DL><DT>-path &lt;searchpath&gt; :</DT>
+<DD>Specify searchpath for images. This is useful when set
+ in <A HREF="#Configuration">bsetroot.rc</A>.</DD></DL>
+<DL><DT>-quiet :</DT>
+<DD>Igore any errors silently.</DD></DL>
+<DL><DT>-vdesk :</DT>
+<DD>Use virtual desktop size to span the wallpaper over monitors.</DD></DL>
+<DL><DT>-save &lt;file.bmp&gt; :</DT>
+<DD>Save the generated background to the specified file rather
+ than setting the wallpaper.</DD></DL>
+<DL><DT>-help :</DT>
+<DD>Show short summary.</DD></DL>
+<A CLASS="label" NAME="Configuration"><H2>3.&nbsp;Configuration</H2></A>
+<P>Configuration is not needed in most cases. Just put the bsetroot
+executable where blackbox.exe is.</P>
+<P>When bsetroot finds bsetroot.rc in the same directory, it starts
+reading options from it like commandline switches. This is supposed
+to be useful especially with the <B>-path</B> switch.</P>
+<P>For example these lines would make bsetroot look for images in
+two additional locations and also let it silently ignore any errors.</P>
+<PRE>-path &quot;c:/blackbox/images&quot;
+-path &quot;c:/my pictures&quot;
+-quiet
+</PRE>
+<A CLASS="label" NAME="Searchpaths"><H2>4.&nbsp;Searchpaths</H2></A>
+<P>This is how bsetroot looks for images:</P>
+<OL><LI>First it tries the image-path as given in the commandline.
+<LI>Then it looks for the image in the searchpaths from any
+ -path ... options (as listed in bsetroot.rc).
+<LI>Finally it looks for the image in a folder 'backgrounds'
+ relative to the location of bsetroot.exe.</OL>
+<P>You can use relative or absolute paths with both images and
+image searchpaths. Relative paths refer to the location where
+bsetroot.exe is.</P>
+<P><B>Please note that paths with spaces need to have quotes.</B> That
+is for both paths on the command line and paths in bsetroot.rc.</P>
+<A CLASS="label" NAME="Gradients"><H2>5.&nbsp;Gradients</H2></A>
+<P>A gradient texture is defined by the gradient type and two
+<A HREF="#Colours">colours</A>.</P>
+<P>Type can be one of &quot;vertical&quot;, &quot;horizontal&quot;, &quot;diagonal&quot;,
+&quot;crossdiagonal&quot;, &quot;pipecross&quot;, &quot;elliptic&quot;, &quot;rectangle&quot;, or &quot;pyramid&quot;.</P>
+<P>For compatibility with bsetroot on linux, you also can/should include
+the word &quot;gradient&quot; in the gradient type.</P>
+<P>You can combine the gradient type with &quot;interlaced&quot; to get some
+effect or add a bevel with &quot;raised/sunken bevel1/2&quot;.</P>
+<P>Example:</P>
+<PRE>bsetroot -gradient verticalinterlacedgradient -from steelblue -to orange
+</PRE>
+<A CLASS="label" NAME="Colours"><H2>6.&nbsp;Colours</H2></A>
+<P>Colours can be in any format that blackbox accepts.</P>
+<UL><LI>rgb format: rgb:77/88/CC or rgb:7/8/C
+<LI>html format: &quot;#7788CC&quot; or the short form &quot;#78C&quot;
+<LI>one from the literal colors below</UL>
+<P>Note that bsetroot on linux wants quotes around html format colors.</P>
+<H4>Literal&nbsp;Colors:</H4>
+<P>These literal color names are known to bsetroot:</P>
+<P>aliceblue antiquewhite aquamarine azure beige bisque black
+blanchedalmond blue blueviolet brown burlywood cadetblue chartreuse
+chocolate coral cornflowerblue cornsilk cyan darkblue darkcyan
+darkgoldenrod darkgray darkgreen darkkhaki darkmagenta darkolivegreen
+darkorange darkorchid darkred darksalmon darkseagreen darkslateblue
+darkslategray darkturquoise darkviolet deeppink deepskyblue dimgray
+dodgerblue firebrick floralwhite forestgreen gainsboro ghostwhite
+gold goldenrod gray green greenyellow honeydew hotpink indianred
+ivory khaki lavender lavenderblush lawngreen lemonchiffon lightblue
+lightcoral lightcyan lightgoldenrod lightgoldenrodyellow lightgray
+lightgreen lightpink lightsalmon lightseagreen lightskyblue
+lightslateblue lightslategray lightsteelblue lightyellow limegreen
+linen magenta maroon mediumaquamarine mediumblue mediumorchid
+mediumpurple mediumseagreen mediumslateblue mediumspringgreen
+mediumturquoise mediumvioletred midnightblue mintcream mistyrose
+moccasin navajowhite navy navyblue oldlace olivedrab orange
+orangered orchid palegoldenrod palegreen paleturquoise
+palevioletred papayawhip peachpuff peru pink plum powderblue
+purple red rosybrown royalblue saddlebrown salmon sandybrown
+seagreen seashell sienna skyblue slateblue slategray springgreen
+steelblue tan thistle tomato turquoise violet violetred wheat white
+whitesmoke yellow yellowgreen</P>
+<P>antiquewhite1..4 aquamarine1..4 azure1..4 bisque1..4 blue1..
+4 brown1..4 burlywood1..4 cadetblue1..4 chartreuse1..4
+chocolate1..4 coral1..4 cornsilk1..4 cyan1..4 darkgoldenrod1..4
+darkolivegreen1..4 darkorange1..4 darkorchid1..4 darkseagreen1..4
+darkslategray1..4 deeppink1..4 deepskyblue1..4 dodgerblue1..4
+firebrick1..4 gold1..4 goldenrod1..4 green1..4 honeydew1..4
+hotpink1..4 indianred1..4 ivory1..4 khaki1..4 lavenderblush1..4
+lemonchiffon1..4 lightblue1..4 lightcyan1..4 lightgoldenrod1..4
+lightpink1..4 lightsalmon1..4 lightskyblue1..4 lightsteelblue1..4
+lightyellow1..4 magenta1..4 maroon1..4 mediumorchid1..4
+mediumpurple1..4 mistyrose1..4 navajowhite1..4 olivedrab1..4
+orange1..4 orangered1..4 orchid1..4 palegreen1..4 paleturquoise1..4
+palevioletred1..4 peachpuff1..4 pink1..4 plum1..4 purple1..4
+red1..4 rosybrown1..4 royalblue1..4 salmon1..4 seagreen1..4
+seashell1..4 sienna1..4 skyblue1..4 slateblue1..4 slategray1..4
+snow1..4 springgreen1..4 steelblue1..4 tan1..4 thistle1..4
+tomato1..4 turquoise1..4 violetred1..4 wheat1..4 yellow1..4</P>
+<A CLASS="label" NAME="History"><H2>7.&nbsp;History</H2></A>
+<H4>bsetroot</H4>
+<P>Version 2.1 (20-May-2009) (grischka)</P>
+<UL><LI>New: color dithering on 16-bit displays.
+<LI>Added switches: -scale, -quiet, -path.
+<LI>Changed bsetroot.rc format to be a commandline option listing.
+<LI>Optimized code (100 kb less)</UL>
+<P>Version 2.0b2 (11-Mar-2004) (grischka)</P>
+<UL><LI>Passes &quot;tile&quot;-option to windows for fullscreen images
+ (for multimon setups to spawn images across all screens)</UL>
+<P>Version 2.0b1 (21-Dec-2003) (grischka)</P>
+<UL><LI>Added '-vdesk' switch (use virtual desktop size)
+<LI>Now reads image-search patterns from bsetroot.rc.</UL>
+<P>Version 2.0b (25-Apr-2003) (grischka)</P>
+<UL><LI>Merged bsetbg and bsetroot into one executable.
+<LI>As a benefit, it can draw images in .bmp .gif .jpg .png formats
+ on gradient backgrounds, optionally with saturation and hue factors.
+<LI>The included bsetbg just passes it's commandline to bsetroot.
+<LI>Added -save &lt;image.bmp&gt; switch to write out the generated image
+ to the specified path.</UL>
+<P>&nbsp;</P>
+<P>Version 1.8 (2003-04-01)</P>
+<UL><LI>Cleaned up the code and corrected some resource leaks (ironhead)</UL>
+<P>Version 1.7 (2002-09-05)</P>
+<UL><LI>Now uses the same rendering engine as Blackbox for Windows 0.0.60
+ (ironhead/qwilk/nivenh)
+<LI>Added -mod support (ironhead)
+<LI>It is now possible to use -bitmap and -solid concurrently (useful
+ for centered bitmaps) (qwilk)
+<LI>Fixed a bug where Diagonal would be drawn instead of CrossDiagonal
+ (ironhead)
+<LI>Created the missing 48x48 pixel icon... :) (qwilk)
+<LI>Cleaned up the code and made minor changes all over the place...=]
+ (qwilk/ironhead)</UL>
+<P># bsetroot is now open source...</P>
+<P>Version 1.0.0.6 (2002-03-03)</P>
+<UL><LI>Reintroduced the &quot;stretch&quot; bitmap style option (qwilk)
+<LI>Fixed an issue using rgb: colours, added more colour definitions
+ (deadbeat)
+<LI>Fixed a memory leak in the gradient code (steev/nivenh)
+<LI>New HTML documentation (qwilk)</UL>
+<P>Version 1.0.0.5 (2002-01-03)</P>
+<UL><LI>Changed literal parsing (azathoth)</UL>
+<P>Version 1.0.0.4 (2002-01-02)</P>
+<UL><LI>Removed stretch option azathoth
+<LI>Updated to use new BImage version (azathoth)</UL>
+<P>Version 1.0.0.3 (2001-12-30)</P>
+<UL><LI>Fixed colour order (azathoth)</UL>
+<P>Version 1.0.0.2 (2001-12-29)</P>
+<UL><LI>Swapped colour rendering (azathoth)
+<LI>Fixed gradients so elliptic shows correctly and other gradients
+ render more nicely (azathoth)</UL>
+<H4>bsetbg</H4>
+<P>Version 1.2 [change bsetbg.cpp 04/18/2003 NC-17]</P>
+<UL><LI>executing bsetbg.exe with no arguments now shows the help window</UL>
+<P>[change bsetbg.cpp 01/21/2003 ironhead]</P>
+<UL><LI>switched to the CxImage image manipulation library
+<LI>modified the command line to allow for greater compatibility with
+ bsetbg for *nix
+<LI>made the default behaviour to load the file in &quot;-full&quot; mode (like
+ bsetbg for *nix)</UL>
+<P>Version 1.1 [changed bsetbg.cpp 9/15 ironhead]</P>
+<UL><LI>added error checking (thanx NC-17!)</UL>
+
+<p>&nbsp;</p>
+<hr />
+<p class="footer"> &nbsp;</p>
+</td></tr></table>
+
+</center>
+</body>
+</html>

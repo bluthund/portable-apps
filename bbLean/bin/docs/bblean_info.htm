@@ -1,0 +1,176 @@
+<html>
+<head>
+<title>bbLean - Readme</title>
+<link rel="stylesheet" href="bblean_style.css" type="text/css">
+<style type=text/css></style>
+<base target="body">
+</head>
+<body class="frame_body">
+<A CLASS="label" NAME="Info"><H1>Info</H1></A>
+<A CLASS="label" NAME="License"><H2>License</H2></A>
+<P>bbLean is copyright 2003-2009 grischka@users.sourceforge.net</P>
+<P>bbLean is free software, released under the GNU General Public License
+(GPL version 2). For details see: <A HREF="http://www.fsf.org/licenses/gpl.html" target="_parent">http://www.fsf.org/licenses/gpl.html</A></P>
+<P>This program is distributed in the hope that it will be useful, but
+WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY
+or FITNESS FOR A PARTICULAR PURPOSE.</P>
+<P><IMG SRC="bblean_logo.png"/></P>
+<A CLASS="label" NAME="Links"><H2>Links</H2></A>
+<TABLE width=100%><TR ALIGN=LEFT><TH WIDTH=35%>General</TH>
+<TH>&nbsp;</TH>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>bbLean</TD>
+<TD><A HREF="http://bb4win.sourceforge.net/bblean/" target="_parent">http://bb4win.sourceforge.net/bblean/</A></TD>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>bb4win</TD>
+<TD><A HREF="http://bb4win.org/" target="_parent">http://bb4win.org/</A></TD>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>xoblite</TD>
+<TD><A HREF="http://xoblite.net/" target="_parent">http://xoblite.net/</A></TD>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>blackboxwm for linux</TD>
+<TD><A HREF="http://blackboxwm.sourceforge.net/" target="_parent">http://blackboxwm.sourceforge.net/</A></TD>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>Forum</TD>
+<TD><A HREF="http://www.lostinthebox.com/" target="_parent">http://www.lostinthebox.com/</A></TD>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>Screenshots &amp; Styles</TD>
+<TD><A HREF="http://www.boxshots.org/" target="_parent">http://www.boxshots.org/</A></TD>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>Qwilk's plugin list</TD>
+<TD><A HREF="http://xoblite.net/plugins.html" target="_parent">http://xoblite.net/plugins.html</A></TD>
+</TR>
+</TABLE>
+<BR/>&nbsp;
+<TABLE width=100%><TR ALIGN=LEFT><TH WIDTH=35%>Plugins Authors</TH>
+<TH>&nbsp;</TH>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>Bladestaylor</TD>
+<TD><A HREF="http://bb4win.sourceforge.net/systembarex/" target="_parent">http://bb4win.sourceforge.net/systembarex/</A></TD>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>Kaloth</TD>
+<TD><A HREF="http://www.finalfury.co.uk/" target="_parent">http://www.finalfury.co.uk/</A></TD>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>Kana</TD>
+<TD><A HREF="http://nicht.s8.xrea.com/" target="_parent">http://nicht.s8.xrea.com/</A></TD>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>NC-17</TD>
+<TD><A HREF="http://www.ratednc-17.com/" target="_parent">http://www.ratednc-17.com/</A></TD>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>Theo</TD>
+<TD><A HREF="http://theo.host.sk/" target="_parent">http://theo.host.sk/</A> ?gone?</TD>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>Ysuke</TD>
+<TD><A HREF="http://zzbb.hp.infoseek.co.jp/" target="_parent">http://zzbb.hp.infoseek.co.jp/</A></TD>
+</TR>
+<TR ALIGN=LEFT><TD WIDTH=35%>Pitris</TD>
+<TD><A HREF="http://pitris.org/BBlean" target="_parent">http://pitris.org/BBlean</A></TD>
+</TR>
+</TABLE>
+<A CLASS="label" NAME="Upgrade_Notes"><H2>Upgrade&nbsp;Notes</H2></A>
+<P>Changes in bbLean 1.17 that are incompatible with previous versions.</P>
+<H4>bbkeys.rc:</H4>
+<P>@BBCore.ShowMenu will now always show at mouse position by default.
+To keep existing behaviour with menus invoked by the keyboard, use
+the -key or the -toggle switch:</P>
+<PRE>@BBCore.ShowMenu -key root
+</PRE>
+<H4>menu.rc:</H4>
+<P>[insertpath] does not remove duplicate items anymore. To merge
+two folders, use instead:</P>
+<PRE>[path] (label) {folder1|folder2}
+</PRE>
+<H4>bbLeanSkin.rc:</H4>
+<P>Now uses a dash to separate left from right buttons:</P>
+<PRE>bbleanskin.titlebar.buttons: 4-321
+</PRE>
+<H4>bsetroot.rc:</H4>
+<P>Now uses simple searchpaths instead of wildcards. See bsetroot.rc</P>
+<A CLASS="label" NAME="Changes"><H2>Changes</H2></A>
+<H4>08&nbsp;Dec&nbsp;2009&nbsp;-&nbsp;bbLean&nbsp;1.17.1</H4>
+<UL><LI>Minor bugfixes for blackbox.exe and bbLeanBar.dll
+<LI>Remove control chars from artwiz fonts</UL>
+<H4>20&nbsp;May&nbsp;2009&nbsp;-&nbsp;bbLean&nbsp;1.17</H4>
+<UL><LI>bbLean is more precise with the blackboxwm 0.70 style conventions.
+<LI>Automatically registers all .fnt|fon|ttf fonts in blackbox/fonts
+<LI>Detects whether startup items have been run (win 2k/xp/vista)
+<LI>Optional UTF-8 support with filenames, application titles and menu entries
+<LI>Switch '-in &lt;workdir&gt;' to run commands.
+<LI>Translation file for messages and menus
+<LI>Menus: separators, drop shadows, custom bullets, new title appearances
+ (label, notitle), sort folders, more options for @bbCore.ShowMenu
+<LI>bbLeanBar: window menus, move to workspace with mouse gesture,
+ hide tray icons feature, %K special format for keyboard layout
+<LI>bbLeanSkin: display icon, broam to set custom buttons
+<LI>bbKeys: no more 'winkeyhook', -debug and -nolabel options (bbKeys.rc)
+<LI>bbIconBox: new pager box, drag &amp; drop applications between boxes</UL>
+<H4>02&nbsp;Mai&nbsp;2005&nbsp;-&nbsp;bbLean&nbsp;1.16</H4>
+<UL><LI>Ability to show alternate menus (See Details-&gt;Bro@ms-&gt;@BBCore-&gt;Menu).
+<LI>Configurable desktop mouse-clicks (in extensions.rc)
+<LI>New semantics to merge folders: [path] (label) {folder1|folder2}
+<LI>Snap Plugins to each other
+<LI>New workspace code</UL>
+<H4>22&nbsp;Feb&nbsp;2004&nbsp;-&nbsp;bbLean&nbsp;1.12&nbsp;U1</H4>
+<UL><LI>Global font override option, see extensions.rc
+<LI>Some multimon fixes, mostly untested though
+<LI>bbKeys - no more crashes with long commands
+<LI>bbLeanBar - standard icon size is now 16/16
+<LI>bbLeanSkin - added titlebar click options</UL>
+<H4>10&nbsp;Jan&nbsp;2004&nbsp;-&nbsp;bbLean&nbsp;1.10</H4>
+<UL><LI>Drag &amp; drop from and to menus.
+<LI>Keyboard navigation for menus.
+<LI>All menu commands available as bro@ms
+<LI>Load and unload plugins on the fly from the config menu.
+ (Credits to qwilk for the idea and the working example).
+<LI>New menu item [insertpath] to join several folders in one menu.
+<LI>Toolbar and menus toggle with plugins.
+<LI>Added menuitems to set numbers. Hold down Ctrl for faster progress
+<LI>Task flashing support</UL>
+<H4>09&nbsp;Sep&nbsp;2003&nbsp;-&nbsp;bbLean&nbsp;1.00</H4>
+<UL><LI>Transparency for menus and bars.
+<LI>Scroll button for menus
+<LI>Force menu bullet orientation.
+<LI>Enable/disable the background/rootcommand.
+<LI>New version, new name!</UL>
+<H4>12&nbsp;Jul&nbsp;2003&nbsp;-&nbsp;bb008lc&nbsp;update</H4>
+<UL><LI>New gradient code. Better Elliptic gradients and sunken bevels.
+<LI>Sharpened the 'diamond' bullet.
+<LI>Workspaces and desktop are preserved on restart.
+<LI>Toolbar display can be disabled for key commands.</UL>
+<H4>07&nbsp;Jul&nbsp;2003&nbsp;-&nbsp;bb008lc&nbsp;update</H4>
+<UL><LI>BBSystemBar got a 'show current tasks only' option.</UL>
+<H4>27&nbsp;Jun&nbsp;2003&nbsp;-&nbsp;bb008lc&nbsp;update</H4>
+<UL><LI>Workspaces remember their top window
+<LI>Toolbarclock is less self - resizing</UL>
+<H4>16&nbsp;Jun&nbsp;2003&nbsp;-&nbsp;bb008lc&nbsp;update</H4>
+<UL><LI>The systray icon code has been reworked. Thanks to Roger for
+ running several tests.</UL>
+<H4>01&nbsp;Jun&nbsp;2003&nbsp;-&nbsp;bb008lc&nbsp;update</H4>
+<UL><LI>bb008lc has been made fit for xp-pro. Thanks to Pete for
+ running numerous tests.
+<LI>Menues 'not always on top' option.
+<LI>Click on desktop-background brings menues into foreground.
+<LI>Double left click on menu-title toggles the 'on top' property
+ for this menu only.</UL>
+<H4>23&nbsp;May&nbsp;2003&nbsp;-&nbsp;bb008lc&nbsp;update</H4>
+<UL><LI>Clean up, removed unused configuration items.</UL>
+<H4>10&nbsp;May&nbsp;2003&nbsp;-&nbsp;bb008lc&nbsp;update</H4>
+<UL><LI>Added parsing for &lt;styleitem&gt;.fontweight.
+<LI>Added some experimental parsing for *nix type font desriptions.
+<LI>Made any wildcards in styles work</UL>
+<H4>22&nbsp;Apr&nbsp;2003&nbsp;-&nbsp;bb008lc,&nbsp;first&nbsp;release</H4>
+<UL><LI>bb008lc is a lean build for Blackbox for Windows. It is fully compatible
+ to current 0.90 builds and plugins
+<LI>New menu code
+<LI>Built-in contextmenus
+<LI>Shellfolder support.
+<LI>Popup and close delay for menus
+<LI>Browse your styles without getting the menu closed
+<LI>Full access to large folders</UL>
+<H4>Jan&nbsp;2003</H4>
+<UL><LI>grischka found Blackbox for Windows.</UL>
+
+<p>&nbsp;</p>
+<p class="footer">Copyright 2003-2009 grischka@users.sourceforge.net</p>
+</body>
+</html>
