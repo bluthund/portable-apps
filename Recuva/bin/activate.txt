@@ -1,4 +1,0 @@
-1 - Switch off any network interfaces temporarily
-2 - Launch the app, click Cancel on the wizard
-3 - Go to Options > About > Upgrade to Pro
-4 - Use any name of your choice with this key: RK98-WDJB-GVHR-4CSM-C44C
