@@ -1,0 +1,5 @@
+Status icons are from Dropline Etiquette by Silvestre Herrera and Andrew Fitzsimon:
+http://art.gnome.org/themes/icon/1049
+
+License for the icons is Creative Commons Attribution-Share Alike:
+http://creativecommons.org/licenses/by-sa/2.0/
