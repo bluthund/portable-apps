@@ -1,5 +1,5 @@
 # Portable Apps
-A collection of Windows applications made fully portable and movable while contained in a single folder, <i>leaving behind no trace on the system it's been run on.</i>
+A collection of Windows applications made fully portable and movable while contained in a single folder, <i>leaving behind no trace on the system it's been run on.</i> Basically, portable in every sense of the word.
 
 ![alt-text](https://user-images.githubusercontent.com/32809089/112713159-da930080-8ef9-11eb-9d9e-979421762dbd.png)
 
