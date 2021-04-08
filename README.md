@@ -1,15 +1,14 @@
 # Portable Apps
 A collection of Windows applications made fully portable and movable while contained in a single folder, <i>leaving behind no trace on the system it's been run on.</i> Basically, portable in every sense of the word.
 
-![alt-text](https://user-images.githubusercontent.com/32809089/112713159-da930080-8ef9-11eb-9d9e-979421762dbd.png)
-
+![alt-text](https://user-images.githubusercontent.com/32809089/114029949-af17fa80-9897-11eb-9cba-5552802c6eeb.png)
 
 ### What is this, and how does it work?
 This repository contains applications that are normally not amenable to being portable, made portable through the use of <b>symbolic links, aka symlinks</b> (simply put, it's like a shortcut, except that it behaves like the folder or file has been cloned and not just linked), and <b>VBScript</b> and <b>Command Prompt batch files</b> as invisible launchers that do all the component (de)registration, launching and cleanup processes.
 
 The advantage of this approach, is that there is practically <i>zero overhead</i> in running a portable app – unlike the packages created by softwares like VMware ThinApp that put all files in a single file, and then creating additional folders and files for user data, making it somewhat of an annoyance when it comes to moving the application between systems – because it uses no extra tools other than the scripting languages baked into Windows. The best advantage, however, is the system integration that this approach allows for: the applications can be launched from the right-click context menu, in any folder, at any time.
 
-![alt-text](https://user-images.githubusercontent.com/32809089/112717063-29e42b80-8f10-11eb-857e-6660c8d9fdaf.png)
+![alt-text](https://user-images.githubusercontent.com/32809089/114029985-b8a16280-9897-11eb-885b-8eeff5005273.png)
 
 ### What happens to my data when I'm running it?
 Below is what the contents of a standard portable app folder look like. All your data stays in that data folder, and is symlinked to the directories where the program normally expects it to be. Once you exit the program, the launcher script (start.vbs) runs cleanup operations to remove the symlinks and any temporary files or caches.
