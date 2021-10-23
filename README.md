@@ -9,7 +9,7 @@ This repository contains applications that are normally not amenable to being po
 
 The advantage of this approach, is that there is practically <i>zero overhead</i> in running a portable app – unlike the packages created by softwares like VMware ThinApp that put all files in a single file, and then creating additional folders and files for user data, making it somewhat of an annoyance when it comes to moving the application between systems – because it uses no extra tools other than the scripting languages baked into Windows. The best advantage, however, is the system integration that this approach allows for: the applications can be launched from the right-click context menu, in any folder, at any time.
 
-<img src="https://user-images.githubusercontent.com/32809089/138545689-cb5653a1-cdab-4b87-83e6-28e8c8a53e4d.png">
+<img width="544" src="https://user-images.githubusercontent.com/32809089/138545689-cb5653a1-cdab-4b87-83e6-28e8c8a53e4d.png">
 
 
 ### What happens to my data when I'm running it?
