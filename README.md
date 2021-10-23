@@ -1,7 +1,7 @@
 # Portable Apps
 A collection of Windows applications made fully portable and movable while contained in a single folder, <i>leaving behind no trace on the system it's been run on.</i> Basically, portable in every sense of the word.
 
-![alt-text](https://user-images.githubusercontent.com/32809089/138544819-b1e18676-293f-4b82-a8a2-ec41533b95c0.png)
+![alt-text](https://user-images.githubusercontent.com/32809089/138545287-4178bac7-8ddb-4b71-afa4-824332629bee.png)
 
 
 ### What is this, and how does it work?
@@ -9,7 +9,7 @@ This repository contains applications that are normally not amenable to being po
 
 The advantage of this approach, is that there is practically <i>zero overhead</i> in running a portable app – unlike the packages created by softwares like VMware ThinApp that put all files in a single file, and then creating additional folders and files for user data, making it somewhat of an annoyance when it comes to moving the application between systems – because it uses no extra tools other than the scripting languages baked into Windows. The best advantage, however, is the system integration that this approach allows for: the applications can be launched from the right-click context menu, in any folder, at any time.
 
-![alt-text](https://user-images.githubusercontent.com/32809089/138545212-130e9dea-a6d2-409e-875a-b71c4a38eed3.png)
+![alt-text](https://user-images.githubusercontent.com/32809089/138545265-067e7149-7d08-4fe8-b992-530d14d9e903.png)
 
 
 ### What happens to my data when I'm running it?
