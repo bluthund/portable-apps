@@ -1,7 +1,8 @@
 # Portable Apps
 A collection of Windows applications made fully portable and movable while contained in a single folder, <i>leaving behind no trace on the system it's been run on.</i> Basically, portable in every sense of the word.
 
-![alt-text](https://user-images.githubusercontent.com/32809089/114029949-af17fa80-9897-11eb-9cba-5552802c6eeb.png)
+![alt-text](https://user-images.githubusercontent.com/32809089/138544819-b1e18676-293f-4b82-a8a2-ec41533b95c0.png)
+
 
 ### What is this, and how does it work?
 This repository contains applications that are normally not amenable to being portable, made portable through the use of <b>symbolic links, aka symlinks</b> (simply put, it's like a shortcut, except that it behaves like the folder or file has been cloned and not just linked), and <b>VBScript</b> and <b>Command Prompt batch files</b> as invisible launchers that do all the component (de)registration, launching and cleanup processes.
