@@ -1,7 +1,7 @@
 # Portable Apps
 A collection of Windows applications made fully portable and movable while contained in a single folder, <i>leaving behind no trace on the system it's been run on.</i> Basically, portable in every sense of the word.
 
-![alt-text](https://user-images.githubusercontent.com/32809089/138545673-f47a6a4f-4489-4393-ae92-bf34bf79081b.png)
+![alt-text](https://user-images.githubusercontent.com/32809089/138716405-585dd71a-32ae-4b57-a9fb-ad86b4129cfb.png)
 
 
 ### What is this, and how does it work?
@@ -9,13 +9,14 @@ This repository contains applications that are normally not amenable to being po
 
 The advantage of this approach, is that there is practically <i>zero overhead</i> in running a portable app – unlike the packages created by softwares like VMware ThinApp that put all files in a single file, and then creating additional folders and files for user data, making it somewhat of an annoyance when it comes to moving the application between systems – because it uses no extra tools other than the scripting languages baked into Windows. The best advantage, however, is the system integration that this approach allows for: the applications can be launched from the right-click context menu, in any folder, at any time.
 
-<img width="544" src="https://user-images.githubusercontent.com/32809089/138545689-cb5653a1-cdab-4b87-83e6-28e8c8a53e4d.png">
+<img width="544" src="https://user-images.githubusercontent.com/32809089/138716436-c3da8e33-6576-4a5f-a664-08daba40e2fc.png">
 
 
 ### What happens to my data when I'm running it?
-Below is what the contents of a standard portable app folder look like. All your data stays in that data folder, and is symlinked to the directories where the program normally expects it to be. Once you exit the program, the launcher script (start.vbs) runs cleanup operations to remove the symlinks and any temporary files or caches.
+Below is what the contents of a standard portable app folder look like. All your data stays in that data folder, and is symlinked to the directories where the program normally expects it to be. Once you exit the program, the launcher script (start.vbs, which will sometimes call helper batch scripts in the \bin folder) runs cleanup operations to remove the symlinks and any temporary files or caches.
 
 ![alt-text](https://user-images.githubusercontent.com/32809089/112468659-8cadb980-8d8e-11eb-8402-46254a7e82d1.png)
+
 
 ### Hey, why are some of the apps listed above not in the repository?
 Licensing issues. They are proprietary software that I've purchased and made portable for my own use (especially because I tend to change OSes frequently, so it's convenient for me to have portable apps instead of having to reinstall them all over) and it's likely not legal to redistribute. Also note that some of these applications, like MATLAB, create license files that use an ID generated from your machine configuration, so you'd have to re-license every time you take the app to a new machine, which I believe is actually forbidden in the EULA (but it's still possible, provided you have your license file).
